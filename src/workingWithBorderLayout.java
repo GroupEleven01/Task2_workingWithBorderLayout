@@ -30,7 +30,7 @@ public class workingWithBorderLayout {
         return BorderLabel;
     }
 
-    public JPanel BorderPanel(){
+     JPanel BorderPanel(){
         JPanel Borderpanel = new JPanel();
         Borderpanel.setLayout(new GridLayout(3,1));
 

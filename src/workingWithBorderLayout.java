@@ -10,7 +10,7 @@ public class workingWithBorderLayout {
     public JFrame BorderFrame(){
         JFrame BorderFrame = new JFrame("Borderlayout Demo");
         BorderFrame.setSize(600, 400);
-        BorderFrame.setLayout(new BorderLayout());
+        BorderFrame.setLayout(new BorderLayout(5,5));
 
         BorderFrame.add(this.BorderLabel(), BorderLayout.NORTH);
         BorderFrame.add(this.BorderPanel(),BorderLayout.WEST);
@@ -36,7 +36,7 @@ public class workingWithBorderLayout {
 
 
         JButton Button1 = new JButton("Option-1");
-        JButton Button2 = new JButton("Option-2");
+        JButton Button2 = new JButton("Option-2 B2");
         JButton Button3 = new JButton("Option-3");
 
         Borderpanel.add(Button1);

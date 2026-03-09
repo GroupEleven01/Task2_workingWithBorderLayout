@@ -54,7 +54,7 @@ public class workingWithBorderLayout {
 
         JTextArea BorderTextArea = new JTextArea("Type here.....");
         BorderTextArea.setLineWrap(true);
-        BorderTextArea.setWrapStyleWord(true);
+        BorderTextArea.setWrapStyleWord(false);
 
         JScrollPane BorderScroller = new JScrollPane(BorderTextArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
                 JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);

@@ -9,7 +9,7 @@ public class workingWithBorderLayout {
 
     public JFrame BorderFrame(){
         JFrame BorderFrame = new JFrame("BorderLayout Demo - Branch1");
-        BorderFrame.setSize(600, 400);
+        BorderFrame.setSize(650, 420);
         BorderFrame.setLayout(new BorderLayout());
 
         BorderFrame.add(this.BorderLabel(), BorderLayout.NORTH);
@@ -62,6 +62,7 @@ public class workingWithBorderLayout {
 
     public JButton SubmitButton(){
         JButton submitButton = new JButton("Submit");
+        submitButton.setBackground(Color.GREEN);
 
         return submitButton;
     }

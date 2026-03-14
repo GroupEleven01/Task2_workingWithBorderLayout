@@ -22,10 +22,28 @@ class workingWithBorderLayoutTest {
 
     @org.junit.jupiter.api.Test
     void borderLabel() {
+        JLabel label = app.BorderLabel();
+        assertNotNull(label);
+        assertEquals("Application Tittle", app.BorderLabel().getText());
     }
 
     @org.junit.jupiter.api.Test
     void borderPanel() {
+        JPanel Panel = app.BorderPanel();
+        JButton b1 = (JButton) Panel.getComponent(0);
+        JButton b2 = (JButton) Panel.getComponent(1);
+        JButton b3 = (JButton) Panel.getComponent(2);
+
+        assertNotNull(Panel);
+        assertEquals(3, Panel.getComponentCount());
+
+        assertNotNull(b1);
+        assertNotNull(b2);
+        assertNotNull(b3);
+
+        assertEquals("Option-1", b1.getText());
+        assertEquals("Option-2", b2.getText());
+        assertEquals("Option-3", b3.getText());
     }
 
     @org.junit.jupiter.api.Test

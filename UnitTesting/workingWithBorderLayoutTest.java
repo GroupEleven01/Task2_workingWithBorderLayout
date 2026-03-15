@@ -17,7 +17,7 @@ class workingWithBorderLayoutTest {
     void borderFrame() {
         assertNotNull(appFrame);
         assertEquals("Borderlayout Demo", appFrame.getTitle());
-        assertTrue(appFrame.getLayout() instanceof BorderLayout);
+        assertInstanceOf(BorderLayout.class, appFrame.getLayout());
     }
 
     @org.junit.jupiter.api.Test
@@ -58,12 +58,16 @@ class workingWithBorderLayoutTest {
 
         assertNotNull(area);
         assertEquals("Type here.....", area.getText());
-        assertEquals(true, area.getLineWrap());
-        assertEquals(true, area.getWrapStyleWord());
+        assertTrue(area.getLineWrap());
+        assertTrue(area.getWrapStyleWord());
 
     }
 
     @org.junit.jupiter.api.Test
     void SubmitButton() {
+        JButton SubmitBtn = app.SubmitButton();
+
+        assertNotNull(SubmitBtn);
+        assertEquals("Submit", SubmitBtn.getText());
     }
 }
